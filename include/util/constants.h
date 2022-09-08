@@ -1,9 +1,9 @@
 #ifndef __CONSTANTS_H__
 #define __CONSTANTS_H__
 
-namespace nbt
+namespace gnbt
 {
-    namespace font
+    namespace fonts
     {
         struct FontAsset
         {
@@ -21,7 +21,7 @@ namespace nbt
             char const *mediumItalic{};
             char const *regular{};
             char const *regularItalic{};
-            char const *italic;
+            char const *italic{};
             char const *light{};
             char const *lightItalic{};
             char const *extraLight{};
@@ -67,6 +67,9 @@ namespace nbt
             .extraLightItalic = "assets/fonts/SourceCodePro/SourceCodePro-ExtraLightItalic.ttf",
         };
     } // namespace font
-} // namespace gnbt
+
+    char const *windowTitle = "gNBT - Minecraft NBT tool";
+
+} // namespace ggnbt
 
 #endif // __CONSTANTS_H__
